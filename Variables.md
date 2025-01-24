@@ -23,4 +23,12 @@
 6. Export
 - We can export shell variables to other shells with export commands
 
+7. Shell Options
+- Both set and unset are builtin shell commands.
+- Setting -u shell will treat any reference to unset variables as error
+- To list all shell options use echo $-
+- 
+![image](https://github.com/user-attachments/assets/8cd00b10-9a3f-4de9-9af1-81859d613626)
+
+
  
