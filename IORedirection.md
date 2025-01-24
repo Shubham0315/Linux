@@ -9,4 +9,18 @@
 
 <img width="774" alt="image" src="https://github.com/user-attachments/assets/f387291e-6f2a-41e3-8679-30aaac849223" />
 
-- Output file is erased 
+- >> append :- to append output to file
+
+![image](https://github.com/user-attachments/assets/7c1ffae9-06d2-49b3-adc1-d9254fa71373)
+
+3. Error redirection
+- 2> stderr :- Useful to prevent error messages from cluttering screen
+
+![image](https://github.com/user-attachments/assets/3cdf7fb7-f40e-4142-958d-0403086604a6)
+
+- 2>&1 :- to redirect both stdout and stderr to same file
+
+4. Input redirection
+- Redirecting stdin is done with <
+
+
