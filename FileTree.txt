@@ -1,0 +1,38 @@
+
+- Filesystem Hierarchy Standard (FHS) :- Designed to be used by Unix distribution developers. It is to reference to it.
+1. root dir :- Everything exists on linux system is found below it
+2. Binary directories
+- /bin :- contains binaries for use by all users. Contains commands like cat,cp, date, echo, grep
+- other /bin :- This can be user specific /home/shubham/bin
+- /sbin :- contains binaries to configure the OS
+- /lib :- Binaries found in /bin and /sbin often use shared lib located in /lib. 
+- /opt :- To store optional software
+3. Configuration directories
+- /boot :- Contains all files needed to boot computer. /boot/grub/grub.cfg file defines boot menu that is displayed before kernel starts
+- /etc :- Contains all machine specific configuration files (Editable Text Configuration). 
+4. Data Directories
+- /home :- To store personal/project data of users (/home/$user). Also stores user profiles
+- /srv :- Used for the data that is served by your system
+- /media :- Mount point for removable media devices such as CD-ROM's, digital cameras, usb. 
+- /mnt :- This should be empty and to be used for temporary mount points
+- /tmp :- to store temporary data when needed. This data stored may use either disk space or RAM.
+5. In memory directories
+- /dev :- Device files in /dev appear to be ordinary but are not actually located on hard disk
+- /dev/null :- Unlimited storage but nothing can be retrieved from it. Anything written here is discarded (used to discard unwanted output from commands)
+- /proc :- proc filesystem. /proc/cpuinfo gives info about cpu
+- /proc/interrupts :- displays the interrupts
+6. /usr (Unix System Resources)
+- /usr/bin :- contains lot of vcommands
+- /usr/include :- contains general use files for C
+- /usr/lib :- contains libraries not directly executed by users or scripts
+- /usr/local :- used by admin to install software locally
+- /usr/share :- contains architecture independent data
+- /usr/src :- location for kernel source files
+- 
+7. /var Variable Data
+- Files which're unpredictable in size such as log, cache and spool file are located in /var
+- /var/log :- central point to contain all log files
+- /var/log/messages :- troubleshooting file. This file contains info on what happened to system
+- /var/cache :- contain cache data for several apps
+- /var/spool :- contains spool directories for mail and cron. Also is a parent dir for other spool files
+- /var/lib :- contains app state information
