@@ -1,0 +1,31 @@
+pwd :- present working directory
+cd :- change directory
+cd ~ :- go to home dir
+cd.. :- one dir back
+cd - :- previous dir
+ls :- list dir contents
+ls -a :- show all files including hidden ones
+ls -l :- long listing
+ls -lh :- long list in human readable format
+mkdir :- make dir
+mkdir -p :- make subdirectories (-m for mode/permissions)
+rmdir :- remove dir
+rmdir -p :- remove subdirectories
+
+file :- To check file type
+touch :- create file
+rm :- remove file (forever)
+rm -i :- preevnt from accidentally removing file, asks for prompt
+rm -rf :- r recursive and f means forcefully
+cp :- copy file (copy content from one file to another or copy file from one location to other)
+cp file dir/ :- copy file to another dir
+cp -r :- to copy directories completely
+mv :- rename or move files
+
+head :- dispaly first 10 lines of file (head -n to display first n lines, head -cn to display first n bytes)
+tail :- display last 10 lines
+cat :- display file contents
+concatenate :- cat is short for concat. To concatenate many files into single large file
+cat > file.txt :- to create files
+tac :- show file content backwards (linewise)
+more/less :- to display file contents that have more than one screen. Space bar to see next page
