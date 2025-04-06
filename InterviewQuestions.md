@@ -231,3 +231,6 @@ What is the difference between > and >> in Linux?
  
 - 2> To overwrite error output :- **command 2> error.log**
 - 2>> to append error output :- **command 2> error.log**
+
+-----------------------------------------------------------------------------------
+
