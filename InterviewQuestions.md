@@ -171,3 +171,63 @@ How do you handle log rotation?
 
 -----------------------------------------------------------------------------------
 
+What is the difference between grep and egrep?
+-
+- grep is used for searching and filtering text based on patterns
+- egrep is grep -E, which supports extended regex. Extended regex allow more complex patterns without needing to escape special characters
+
+-----------------------------------------------------------------------------------
+
+How would you find a file in Linux?
+-
+- Using find command. Used to search files and directories based on name, size, type
+- Command :- **find -name file**
+- Find by type :- **find . -type f/d/l**   (file/dir/links)
+- Find by extension :- **find . -name *.txt**
+- Find by size :- **find . -size +100M**
+- Find by time :- **find . -mtime -7**    (modified last 7 days)
+
+-----------------------------------------------------------------------------------
+
+What is ps command and what does it do?
+-
+- Process status
+- To display info about active processed running on system
+- Provides details such as PID, terminal associated with process, CPU, memory usage
+- ps -ef
+
+-----------------------------------------------------------------------------------
+
+How would you check the available memory on a Linux system?
+-
+- free command :- to check memory usage. Gives total, used, free, shared, available memory columns
+- top command :- provides real time CPU,memory usage and more
+
+-----------------------------------------------------------------------------------
+
+Explain the kill command and its options.
+-
+- kill command is used to send signal to process for terminating it.
+- kill sends TERM signal (signal no 15) which asked the process to terminate
+- To forcefull terminate process :- **kill -9 PID**
+- killall :- Instead of using PID we can use name of process to terminate all instances of process
+
+-----------------------------------------------------------------------------------
+
+What is awk used for?
+-
+- awk is used for pattern scanning and processing. Used to manipulate and analyse data in files
+- It allows to perform operations like searching, extracting, formatting and transforming data from structured text
+
+-----------------------------------------------------------------------------------
+
+What is the difference between > and >> in Linux?
+-
+- > overwrite output in existing file. If file is not there, it created one
+  - echo "hello" > example.txt
+ 
+- >> Append output at the end of file without overwriting existing content. If file doesnt exist, creates new one
+  - echo "hello" >> example.txt
+ 
+- 2> To overwrite error output :- **command 2> error.log**
+- 2>> to append error output :- **command 2> error.log**
