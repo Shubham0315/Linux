@@ -234,3 +234,64 @@ What is the difference between > and >> in Linux?
 
 -----------------------------------------------------------------------------------
 
+What is a shell? What are the types of shells in Linux?
+-
+- Shell us a CLI that allows users to interact with OS. It acts as bridge between user and kernel, interpreting commands typed by user and executing them.
+- It takes user input, interprets and passes it to OS, displays the result
+- Types of shell :- Bash, sh, ksh, zsh
+- Bash :- Bourne again shell. Most common for linux. Supports scripting, variables, loops  (/bin/bash)
+- sh :- original unix shell, less feature than bash  (/bin/sh)
+
+- To find current shell :- **echo $SHELL** or **cat /etc/shells**
+
+-----------------------------------------------------------------------------------
+
+What are positional parameters in a shell script?
+-
+- These are variables that hold arguments passed to script when it is executed. These parameters allow us to access input values directly inside our script.
+  - e.g :- ./script.sh arg1 arg2 arg3
+  - In script $0 is script name (./script.sh), $1 is arg1, $2 is arg2, $3 is arg3
+  - To check no of parameters inside script :- $#
+  - To quote all arguments individually :- $@
+  - To quote all arguments  as single string :- $*
+ 
+-----------------------------------------------------------------------------------
+
+What is the difference between = and == in shell scripting?
+-
+- = is used in [] or [[]]. It compares strings for equality
+- == is used in [[]] only. It also compares strings for equality
+
+-----------------------------------------------------------------------------------
+
+How do you read input from a user in a shell script?
+-
+- We can read user input in shell script using read command. It waits for user to type something and stores the input into a variable
+  - e.g :- read variable
+-     echo "What is your name?"
+      read name
+      echo "Hello, $name!"
+- This will prompt :- What is your name?
+  - Here we need to provide input
+ 
+- Custom Prompt
+  - read -p "Enter your age: " age
+  - echo "You are $age years old"
+ 
+- To hide something like password :- read -s (hides what we type)
+
+-----------------------------------------------------------------------------------
+
+What does #!/bin/bash mean?
+-
+- It is called shebang which lies at top of shell script
+- #! tells system what follows is the path to interpreter that should be used to run script
+- /bin/bash is absolute path to bash shell
+- So this line means use the bash shell to interpret and run script
+- If we dont specify the shell, script might break with errors or behave unexpectedly
+
+-----------------------------------------------------------------------------------
+
+How do you use if, else, elif conditions in shell scripts?
+- 
+- 
