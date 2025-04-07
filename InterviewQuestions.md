@@ -391,3 +391,39 @@ What are some commonly used string operations in shell scripts?
 
 -----------------------------------------------------------------------------------
 
+How do you manage errors and exit codes in shell scripting?
+-
+- In shell scripting, error handling and exit codes are crucial for determining whether a script or command has executed and for managing flow of execution based on success or failure
+- Every command in shell script return exit code or status to indicate whether command is success or not
+  - Exit code 0 :- Success with no error
+  - Non-zero exit code :- Command failed
+  - 1 :- command failed
+  - 2 :- Misuse of shell bulletins
+ 
+- Use $? to capture exit status and store it
+- Use set -e to exit on errors immediately.
+- Use set -u to handle undefined variables
+
+-----------------------------------------------------------------------------------
+
+What is set -e, set -x, set -u ?
+-
+- Set is  uilt in command used to control behaviour of shell
+- set -e :- exit on error, if command gives non zero exit status. In production scripts where you need to ensure that errors do not go unnoticed.
+- set -x :- to enable debugging, shell will print each command and its arguments as they're executed
+- set -u :- treat undefined variables as error. Script will exit immediately if any variable is used without being defined. This prevents issues caused by accidental typos or uninitialized variables and ensures that all variables are explicitly defined before being used
+
+-----------------------------------------------------------------------------------
+
+How do you check the memory or disk usage using shell scripting?
+-
+- To check memory usage :- free
+- To check disk usage :- df or du
+- To monitor memory usage :- top
+- To monitor memeory and disk usage :- ps
+
+-----------------------------------------------------------------------------------
+
+How would you monitor a log file in real-time and trigger an alert?
+-
+- 
