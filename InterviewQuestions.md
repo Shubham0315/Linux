@@ -427,3 +427,49 @@ How do you check the memory or disk usage using shell scripting?
 How would you monitor a log file in real-time and trigger an alert?
 -
 - 
+
+
+-----------------------------------------------------------------------------------
+
+Explain awk command
+-
+- AWK is powerful scripting language and command line tool used for text processing and data extraction in Unix env
+- Columns content are fileds for awk, awk will scan each line in file and give us required output
+- Syntax :- **awk 'pattern { action }' input_file**
+  - Pattern :- condition determining when action to be executed
+  - action :- what to do when pattern matches
+  - input_file :- file on which awk to perform action
+ 
+- awk divides each input line into fields
+  - $0 :- entire line
+  - NF :- no of fields in current record
+  - NR :- no of records processed
+ 
+- print entire line :- awk '{ print $0 }' file.txt
+- print specific fields :- awk '{ print $1, $2 }' file.txt
+
+-----------------------------------------------------------------------------------
+
+Explain grep command
+-
+- grep is used to search patterns in files or input provided to it
+- It stands for global regular expression print
+- It allows to search through files for specific text and print matching lines
+- Syntax :- **grep "pattern" file.txt**
+- To display line numbers with matches :- grep -n "pattern" file.txt
+- To count number of matches :- grep -c "pattern" file.txt
+- To serach multiple patterns :- grep -E "p1|p2" file.txt
+
+-----------------------------------------------------------------------------------
+
+Explain sed command
+-
+- stream editor
+- Powerful linux tool used for text manipulation.
+- Used to perform basic text transformations on inout stream. Basically to search and replace
+- Syntax :- **sed [OPTION] 'command' file.txt**
+
+- To search pattern and replace :- sed 's/word'replace/' file.txt
+- To replace all occurences in each line :- **sed 's/word/replace/g' file.txt**
+
+-----------------------------------------------------------------------------------
