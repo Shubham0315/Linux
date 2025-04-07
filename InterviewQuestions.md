@@ -294,4 +294,100 @@ What does #!/bin/bash mean?
 
 How do you use if, else, elif conditions in shell scripts?
 - 
-- 
+- if, else, elif statements in shell scripting let us make decisions based on conditions.
+
+![image](https://github.com/user-attachments/assets/c0027eae-e33c-4e6e-8819-222918219054)
+
+- We can use comparison operators like :- -eq, -ne, -ge, -le, -lt, -gt or =, !=,   
+
+-----------------------------------------------------------------------------------
+
+What is the use of case statements in shell scripts?
+-
+- Case statement is used to handle multiple conditions more cleanly than using many if, elif, else blocks
+- It is cleaner and easier to read when we have many possible values to check
+
+![image](https://github.com/user-attachments/assets/68a03f10-8deb-4335-b093-b6430e6878c8)
+
+- ;; ends each pattern block
+- * is like elase
+- esac ends the case
+
+- Use case over if when
+  - We're checking single variable against multiple possible values
+  - We want to keep code more reliable
+ 
+-----------------------------------------------------------------------------------
+
+How do you use loops (for, while, until) in shell scripting?
+-
+- Loops are used in shell scripting to repear block of code multiple times, depending on condition or a fixed number of iterations.
+- For Loop
+  - Used when we want to iterate over fixed set of values such as list or range of numbers
+ 
+![image](https://github.com/user-attachments/assets/203f84eb-12fa-44b0-b53e-12e23752c391)
+
+- While Loop
+  - Continues executing as long as conditions remain true
+
+![image](https://github.com/user-attachments/assets/01a58b17-5e31-493b-82f0-9ff98fb6e601)
+
+- Until Loop
+  - It continues executing as long as condition is false
+
+![image](https://github.com/user-attachments/assets/1cc51a34-cc44-4774-b7b8-bbde0f2f13ad)
+
+-----------------------------------------------------------------------------------
+
+What is the difference between break and continue?
+-
+- Both break and continue are used to control flow of loops (like for, while, until)
+- Break
+  - Break statement is used to exit loop completely, regardless of whether loop condition is true or not
+  - It terminates entire loop and execution moves to next line of code after loop
+ 
+![image](https://github.com/user-attachments/assets/43529987-f223-49ca-90e0-564efd06f2b2)
+
+- Continue
+  - Used to skip current iteration of loop and move to next iteration
+  - It only skips rest of the current loop cycle and continues with next iteration of loop
+
+![image](https://github.com/user-attachments/assets/05004ef0-4b50-4306-9a45-b6d7e268b678)
+
+-----------------------------------------------------------------------------------
+
+How do you handle command-line arguments in shell scripts?
+-
+- Handling command line arguments in shell scripts allows users to pass input values when running script, which can then be used in script's logic
+- We can handle them using positional parameters ($0, $1, $2, $@, $#)
+- While running script we can do :- **./script.sh arg1 arg2**
+
+-----------------------------------------------------------------------------------
+
+How do you redirect input and output in shell scripting?
+-
+- In shell scripting, we can redirect input and output to/from files or other streams, which is powerful feature that lets you control how data flows in and out of commands
+- To redirect std output to a file (overwrite a file) :- > :- echo "This is a test" > output.txt
+- To redirect standard output to file (Append file) :- >> :- echo "Adding more text" >> output.txt
+
+- To redirect std input from file :- < :- cat < input.txt
+  - Takes content from input.txt and passed to cat command
+ 
+- To redirect std error to file (overwrite) :- 2> :- cat non_existent_file 2> error.log
+- To redirect std error to file (append) :- 2>>
+
+- We can also use pipes
+
+-----------------------------------------------------------------------------------
+
+What are some commonly used string operations in shell scripts?
+-
+- String operators are essential for manipulating and working with text data.
+- To get length of string :- ${#variable}
+- To replace string :- ${string/old/new)
+- String comparison :- ==, =!, <, > [[]]
+- To convert to uppercase :- ${string^^}
+- To convert to lowercase :- ${string,,}
+
+-----------------------------------------------------------------------------------
+
