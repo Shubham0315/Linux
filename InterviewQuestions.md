@@ -141,6 +141,7 @@ How to find which process is using a specific port?
 -----------------------------------------------------------------------------------
 
 How would you secure a Linux server?
+-
 - Keep system up to date. Regularly install system and ensure latest patches are installed :- **sudo yum update**
 - Use firewall to control incoming and outgoing traffic based on defined security rules
 - Secure SSH access using SSH keys. Copy public key to server
