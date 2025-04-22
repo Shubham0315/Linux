@@ -478,3 +478,36 @@ Explain sed command
 /dev/null
 -
 &>/dev/null: Redirects both standard output and error to /dev/null, so it doesn’t print anything to the terminal
+
+-----------------------------------------------------------------------------------
+
+Users
+-
+- To check users on linucx system :- **cat /etc/passwd**
+
+-----------------------------------------------------------------------------------
+
+if ping -c 1 "$host" &>/dev/null; then
+-
+- ping -c 1 "$host": Sends 1 ping packet to the specified $host.
+
+-----------------------------------------------------------------------------------
+
+curl -o /dev/null -s w "%{http_code}" $website
+-
+- curl: Command-line tool to transfer data from or to a server.
+- -o /dev/null: Discards the body of the response (you don’t want to save it).
+- -s: Silent mode (no progress meter or error messages).
+- -w "%{http_code}": Writes just the HTTP status code to stdout.
+
+-----------------------------------------------------------------------------------
+
+curl --output /dev/null --silent --head --fail "$website"
+-
+- --output /dev/null: Discards the body of the response
+- --silent: Suppresses progress and error messages.
+- --head: Requests only the headers (using HTTP HEAD method).
+- --fail: Makes curl exit with a non-zero status on HTTP errors (like 404, 500, etc.)
+
+
+
