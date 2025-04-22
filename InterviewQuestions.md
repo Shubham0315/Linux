@@ -474,3 +474,7 @@ Explain sed command
 - To replace all occurences in each line :- **sed 's/word/replace/g' file.txt**
 
 -----------------------------------------------------------------------------------
+
+/dev/null
+-
+&>/dev/null: Redirects both standard output and error to /dev/null, so it doesn’t print anything to the terminal
