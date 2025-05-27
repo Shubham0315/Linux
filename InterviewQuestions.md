@@ -322,7 +322,7 @@ What is the use of case statements in shell scripts?
 
 How do you use loops (for, while, until) in shell scripting?
 -
-- Loops are used in shell scripting to repear block of code multiple times, depending on condition or a fixed number of iterations.
+- Loops are used in shell scripting to repeat block of code multiple times, depending on condition or a fixed number of iterations.
 - For Loop
   - Used when we want to iterate over fixed set of values such as list or range of numbers
  
