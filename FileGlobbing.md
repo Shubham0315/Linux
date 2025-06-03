@@ -2,7 +2,7 @@
 - * is interpreted by shell as sign to generate filenames matching asterisk to any combination of characters
 
 2. Question mark (?)
-- Sign to generate filenames matching exactky one character.
+- Sign to generate filenames matching exactly one character.
 
 3. Square Brackets []
 - Sign to generate filenames matching any of the characters between [ ]
